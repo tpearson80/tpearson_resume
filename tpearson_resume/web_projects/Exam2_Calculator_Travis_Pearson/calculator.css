@@ -1,0 +1,72 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background:linear-gradient(to right, rgb(172, 170, 170), rgb(44, 34, 34));
+}
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 120vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    background-color: rgba(75, 75, 75, 0.75);
+    color: lightgray;
+}
+button:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+button:active {
+    transform: translate(2px);
+}
+#zero {
+    grid-column: span 2;
+    border-radius: 0px 0px 0px 15px;
+}
+.display-screen {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .90);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 15px 15px 0px 0px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+.display-previous {
+    font-size: .5rem;
+    color: rgb(180, 175, 175);
+}
+.display-current {
+    font-size: 3.5rem;
+    color: lightgray;
+}
+.operand, .equals {
+    background-color: rgba(218, 114, 18, 0.973);
+}
+.operand:hover, .equals:hover {
+    background-color: rgba(253, 163, 78, 0.973);
+}
+#pos-neg, #clear, #percent {
+    background-color: rgba(0, 0, 0, .60)
+}
+#pos-neg:hover, #clear:hover, #percent:hover {
+    background-color: rgba(0, 0, 0, .20)
+}
+#equal {
+    border-radius: 0px 0px 15px 0px;
+}

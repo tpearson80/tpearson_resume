@@ -1,0 +1,45 @@
+#homeStart {
+    text-align: center;
+}
+#homeButton {
+    text-align: center;
+}
+#question2 {
+    background-color:lightgreen; 
+}
+#question4 {
+    background-color:lightgreen; 
+}
+#question6 {
+    background-color:lightgreen; 
+}
+#question8 {
+    background-color:lightgreen; 
+}
+#question10 {
+    background-color:lightgreen; 
+}
+#question1 {
+    outline: 3px dashed;
+    background-color: rgb(179, 180, 182);
+}
+#question3 {
+    outline: 3px dashed;
+    background-color: rgb(179, 180, 182);
+}
+#question5 {
+    outline: 3px dashed;
+    background-color: rgb(179, 180, 182);
+}
+#question7 {
+    outline: 3px dashed;
+    background-color: rgb(179, 180, 182);
+}
+#question9 {
+    outline: 3px dashed;
+    background-color: rgb(179, 180, 182);
+}
+body {
+    display: flexbox;
+    background-color: lightgrey;
+}
