@@ -206,15 +206,12 @@ body>.container {
     grid-template-columns: 1fr;
     padding-top: 20px;
     text-align: center;
+    font-size: large;
 }
 
 .container a {
     color: black;
     padding: 15px;
-}
-
-.references {
-    font-size: large;
 }
 
 .people {
@@ -250,7 +247,15 @@ body>.container {
     .grid-container {
         display: inline-block;
     }
-
+    .container {
+        margin: auto;
+    }
+    .people {
+        margin: auto;
+    }
+    .dummy-border {
+        width: 250px;
+    }
     .head-icons-grid {
         align-content: space-around;
         justify-content: center;
